@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículum - Angelo Santos Gonzalez</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #e2e8f0;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .cv-container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        /* Encabezado con foto */
+        .header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            padding: 30px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 5px solid #facc15;
+        }
+        .foto {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #facc15;
+            background: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .titulos {
+            flex: 1;
+            color: white;
+        }
+        .titulos h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .titulos p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+        .contacto-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        .contacto-mini span {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 30px;
+        }
+        /* Contenido principal */
+        .contenido {
+            padding: 30px 40px;
+        }
+        .seccion {
+            margin-bottom: 28px;
+        }
+        .seccion h2 {
+            font-size: 1.6rem;
+            border-left: 6px solid #facc15;
+            padding-left: 15px;
+            margin-bottom: 16px;
+            color: #0f172a;
+            font-weight: 600;
+        }
+        .grid-dos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .item {
+            margin-bottom: 12px;
+        }
+        .item h3 {
+            font-weight: 600;
+            color: #1e293b;
+            font-size: 1.1rem;
+        }
+        .fecha {
+            font-size: 0.8rem;
+            color: #facc15;
+            background: #1e293b;
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+        .habilidad-tag {
+            background: #e2e8f0;
+            padding: 5px 12px;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 4px 6px 4px 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        hr {
+            margin: 15px 0;
+            border-color: #e2e8f0;
+        }
+        .intereses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .interes-badge {
+            background: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        @media (max-width: 700px) {
+            .header { flex-direction: column; text-align: center; }
+            .grid-dos { grid-template-columns: 1fr; }
+            .contenido { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <div class="header">
+        <!-- Aquí debes cambiar la ruta de la imagen por la ubicación real -->
+        <img class="foto" src="foto.jpg" alt="Angelo Santos Gonzalez" onerror="this.src='https://via.placeholder.com/140?text=Angelo'">
+        <div class="titulos">
+            <h1>ANGELO SANTOS GONZALEZ</h1>
+            <p>Editor de Vídeo | Desarrollador Web en crecimiento (Python, Flask)</p>
+           
+            
+        </div>
+    </div>
+    <div class="contenido">
+        <!-- PERFIL -->
+        <div class="seccion">
+            <h2>🧠 Perfil profesional</h2>
+            <p>Soy una persona curiosa, autodidacta y con mucha energía. Vengo del mundo de la <strong>edición de vídeo</strong> (lo que más he hecho y mejor sé hacer) y actualmente me estoy formando en <strong>programación web con Python y Flask</strong>. Tengo experiencia en atención al cliente gracias a un año en un <strong>call center</strong>, lo que me enseñó a comunicarme bien, manejar presión y resolver problemas rápido. Quiero combinar creatividad, técnica y capacidad de aprender.</p>
+        </div>
+
+        <!-- EXPERIENCIA -->
+        <div class="seccion">
+            <h2>💼 Experiencia laboral</h2>
+            <div class="item">
+                <div class="fecha">Call center | 1 año</div>
+                <h3>Agente de atención al cliente</h3>
+                <p>Atención telefónica, gestión de quejas, uso de CRM, resolución de incidencias. Desarrollo de escucha activa y paciencia.</p>
+            </div>
+            <div class="item">
+                <div class="fecha">Freelance · varios años (principal actividad)</div>
+                <h3>Editor de Vídeo</h3>
+                <p>Edición de contenido para redes sociales, YouTube, promociones y vídeos corporativos. Manejo de Premiere Pro, DaVinci Resolve, CapCut. Postproducción completa: corte, color, audio, títulos, ritmo narrativo.</p>
+            </div>
+            <div class="item">
+                <div class="fecha">En formación (con proyectos reales) · 2025 - actualidad</div>
+                <h3>Desarrollador Web con Python/Flask</h3>
+                <p>Primera aplicación web completa: múltiples páginas, formulario de contacto, base de datos SQLite, inicio de sesión, CSS personalizado. Proyecto funcional disponible para mostrar.</p>
+            </div>
+        </div>
+
+        <!-- HABILIDADES TÉCNICAS en dos columnas -->
+        <div class="seccion">
+            <h2>🛠️ Habilidades técnicas</h2>
+            <div class="grid-dos">
+                <div>
+                    <h3>🎬 Edición de vídeo</h3>
+                    <div><span class="habilidad-tag">Adobe Premiere Pro</span><span class="habilidad-tag">DaVinci Resolve</span><span class="habilidad-tag">CapCut</span></div>
+                    <div><span class="habilidad-tag">Corrección de color</span><span class="habilidad-tag">Audio profesional</span><span class="habilidad-tag">Narrativa visual</span></div>
+                </div>
+                <div>
+                    <h3>💻 Programación (crecimiento activo)</h3>
+                    <div><span class="habilidad-tag">Python</span><span class="habilidad-tag">Flask</span><span class="habilidad-tag">SQLite</span><span class="habilidad-tag">HTML5/CSS3</span></div>
+                    <div><span class="habilidad-tag">Git básico</span><span class="habilidad-tag">Diseño responsivo</span><span class="habilidad-tag">Formularios con Flask</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTOS DESTACADOS -->
+        <div class="seccion">
+            <h2>🚀 Proyectos destacados</h2>
+            <ul style="margin-left: 20px;">
+                <li><strong>Aplicación web con Flask y SQLite</strong> – Sitio funcional con login, panel de contacto, estilos profesionales y base de datos integrada.</li>
+                <li><strong>Portafolio de vídeos editados</strong> – Colección de trabajos personales y profesionales (disponible bajo petición).</li>
+            </ul>
+        </div>
+
+        <!-- FORMACIÓN E IDIOMAS -->
+        <div class="grid-dos" style="margin-bottom: 20px;">
+            <div class="seccion">
+                <h2>📚 Formación</h2>
+                <p><strong>Desarrollo web con Python y Flask</strong> – Autoformación práctica (2025-actualidad).<br>
+                <strong>Edición de vídeo</strong> – Autodidacta, años de experiencia profesional.<br>
+                <strong>Educación secundaria</strong> – Título completo.</p>
+            </div>
+            <div class="seccion">
+                <h2>🌐 Idiomas</h2>
+                <p>Español: Nativo<br>
+                Inglés: Nivel intermedio (lectura técnica y comprensión).</p>
+            </div>
+        </div>
+
+        <!-- INTERESES PERSONALES -->
+        <div class="seccion">
+            <h2>🎯 Intereses personales</h2>
+            <div class="intereses">
+                <span class="interes-badge">🏀 Los Angeles Lakers</span>
+                <span class="interes-badge">📱 crypto.com / criptomonedas</span>
+                <span class="interes-badge">💻 Toshiba, ADELTA, JAYS</span>
+                <span class="interes-badge">🎬 Tecnología audiovisual</span>
+                <span class="interes-badge">🧠 Aprendizaje constante</span>
+            </div>
+        </div>
+
+        <!-- RAZONES PARA CONTRATARME -->
+        <div class="seccion">
+            <h2>✅ ¿Por qué trabajar conmigo?</h2>
+            <p>✔ No me quedo con lo que sé: si algo no lo domino, lo aprendo.<br>
+            ✔ Vengo del vídeo (paciencia, edición, ojo crítico) y voy al código (lógica, estructura).<br>
+            ✔ Experiencia real con clientes y plazos.<br>
+            ✔ Comunicación clara, honestidad y ganas de demostrar lo que valgo.</p>
+        </div>
+
+        <hr>
+        <p style="text-align: center; font-size: 0.75rem; color: #475569;">Referencias disponibles bajo solicitud. Portafolio y proyectos demostrables a petición.</p>
+    </div>
+</div>
+</body>
+</html>
